@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OfficeBall</string>
+    <string name="_1_point_button">+1 point</string>
+    <string name="officeball_tittle" translatable="false">OFFICEBALL</string>
+    <string name="reset_button">Reset</string>
+    <string name="boss_in_office_button">boss in office</string>
+    <string name="caugth_by_boss">caugth by boss</string>
+    <string name="points">points</string>
+</resources>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/papelera"
+    tools:context="com.example.android.officeball.MainActivity"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texColortittle"
+            android:textSize="@dimen/text_tittle"
+            android:gravity="center"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:text="OFFICEBALL"
+            android:id="@+id/titulo" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_general"
+                    android:gravity="center"
+                    android:fontFamily="casual"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:text="points"
+                    android:id="@+id/pTitleA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_points"
+                    android:gravity="center"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:id="@+id/tvpointsA" />
+
+
+                <Button
+                    android:text="+1 point"
+                    android:textAllCaps="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="incrasePointsA"
+                    android:id="@+id/point" />
+
+                <Button
+                    android:text="boss in office"
+                    android:textAllCaps="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="pointBossA"
+                    android:id="@+id/bossPoint" />
+
+                <Button
+                    android:text="caugth by boss"
+                    android:textAllCaps="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="caugthA"
+                    android:id="@+id/bossCaugth" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:fontFamily="casual"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:text="caugth by boss"
+                    android:id="@+id/caugthA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/texColorboss"
+                    android:textSize="@dimen/text_points"
+                    android:gravity="center"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:id="@+id/tvbcaugthA" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_general"
+                    android:gravity="center"
+                    android:fontFamily="casual"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:text="points"
+                    android:id="@+id/pTitleb" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_points"
+                    android:gravity="center"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:id="@+id/tvpointsb" />
+
+
+                <Button
+                    android:text="+1 point"
+                    android:textAllCaps="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="incrasePointsB"
+                    android:id="@+id/pointB" />
+
+                <Button
+                    android:text="boss in office"
+                    android:textAllCaps="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="pointBossB"
+                    android:id="@+id/bossPointb" />
+
+                <Button
+                    android:text="caugth by boss"
+                    android:textAllCaps="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="caugthB"
+                    android:id="@+id/bossCaugthb" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_general"
+                    android:gravity="center"
+                    android:fontFamily="casual"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:text="caugth by boss"
+                    android:id="@+id/caugthb" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/texColorboss"
+                    android:textSize="@dimen/text_points"
+                    android:gravity="center"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:id="@+id/tvbcaugthb" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.5"
+        android:onClick="reset"
+        android:id="@+id/reset" />
+
+</LinearLayout>

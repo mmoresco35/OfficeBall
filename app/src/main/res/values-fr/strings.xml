@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OfficeBall</string>
+    <string name="_1_point_button">+1 point</string>
+    <string name="boss_in_office_button">patron dans bureau</string>
+    <string name="caugth_by_boss">pris par patron</string>
+    <string name="reset_button">remettre</string>
+    <string name="points">points</string>
+</resources>
