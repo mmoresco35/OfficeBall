@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
@@ -110,7 +111,6 @@ public class MainActivity extends AppCompatActivity {
         linearLayout.setBackgroundResource(R.drawable.boss);
         bossPlayer = MediaPlayer.create(this, R.raw.boss);
         bossPlayer.start();
-
 
     }
 }
