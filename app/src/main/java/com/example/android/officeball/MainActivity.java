@@ -1,6 +1,7 @@
 package com.example.android.officeball;
 
 import android.media.MediaPlayer;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Layout;
@@ -13,6 +14,8 @@ import android.widget.Toast;
 
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
+import static android.widget.Toast.makeText;
+import static com.example.android.officeball.R.string.points;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +24,30 @@ public class MainActivity extends AppCompatActivity {
     int cBossA = 0;
     int pointsB =0;
     int cBossB = 0;
+    /**
+     * Fragment's state saved.
+     */
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("pointsA", pointsA);
+        outState.putInt("pointsB", pointsB);
+        outState.putInt("bossA", cBossA);
+        outState.putInt("bossB", cBossB);
+    }
 
+    /**
+     * Fragment's state restore.
+     */
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        pointsA = savedInstanceState.getInt("pointsA");
+        pointsB = savedInstanceState.getInt("pointsB");
+        cBossA = savedInstanceState.getInt("bossA");
+        cBossB = savedInstanceState.getInt("bossB");
+        setData();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
         linearLayout.setBackgroundResource(R.drawable.boss);
         bossPlayer = MediaPlayer.create(this, R.raw.boss);
         bossPlayer.start();
+
 
     }
 }

@@ -4,204 +4,210 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/papelera"
-    tools:context="com.example.android.officeball.MainActivity"
     android:layout_weight="1"
-    android:orientation="vertical">
+    android:background="@drawable/papelera"
+    android:orientation="vertical"
+    tools:context="com.example.android.officeball.MainActivity">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:id="@+id/data"
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/texColortittle"
-            android:textSize="@dimen/text_tittle"
-            android:gravity="center"
-            android:fontFamily="casual"
-            android:textStyle="bold"
-            android:text="OFFICEBALL"
-            android:id="@+id/titulo" />
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:orientation="vertical">
 
             <LinearLayout
-                android:orientation="vertical"
+                android:id="@+id/data"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.25">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/titulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#000"
-                    android:textSize="@dimen/text_general"
                     android:gravity="center"
-                    android:fontFamily="casual"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:text="points"
-                    android:id="@+id/pTitleA" />
+                    android:text="@string/officeball_tittle"
+                    android:textColor="#EC407A"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000"
-                    android:textSize="@dimen/text_points"
-                    android:gravity="center"
-                    android:fontFamily="casual"
-                    android:textStyle="bold"
-                    android:id="@+id/tvpointsA" />
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.25"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pTitleA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/points"
+                            android:textAllCaps="true"
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvpointsA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
 
 
-                <Button
-                    android:text="+1 point"
-                    android:textAllCaps="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="incrasePointsA"
-                    android:id="@+id/point" />
+                        <Button
+                            android:id="@+id/point"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="incrasePointsA"
+                            android:text="@string/_1_point_button"
+                            android:textAllCaps="true" />
 
-                <Button
-                    android:text="boss in office"
-                    android:textAllCaps="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="pointBossA"
-                    android:id="@+id/bossPoint" />
+                        <Button
+                            android:id="@+id/bossPoint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="pointBossA"
+                            android:text="@string/boss_in_office_button"
+                            android:textAllCaps="true" />
 
-                <Button
-                    android:text="caugth by boss"
-                    android:textAllCaps="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="caugthA"
-                    android:id="@+id/bossCaugth" />
+                        <Button
+                            android:id="@+id/bossCaugth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="caugthA"
+                            android:text="@string/caugth_by_boss"
+                            android:textAllCaps="true" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000"
-                    android:textSize="15sp"
-                    android:gravity="center"
-                    android:fontFamily="casual"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:text="caugth by boss"
-                    android:id="@+id/caugthA" />
+                        <TextView
+                            android:id="@+id/caugthA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/caugth_by_boss"
+                            android:textAllCaps="true"
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/texColorboss"
-                    android:textSize="@dimen/text_points"
-                    android:gravity="center"
-                    android:fontFamily="casual"
-                    android:textStyle="bold"
-                    android:id="@+id/tvbcaugthA" />
+                        <TextView
+                            android:id="@+id/tvbcaugthA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#F44336"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.25"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pTitleb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/points"
+                            android:textAllCaps="true"
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvpointsb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <Button
+                            android:id="@+id/pointB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="incrasePointsB"
+                            android:text="@string/_1_point_button"
+                            android:textAllCaps="true" />
+
+                        <Button
+                            android:id="@+id/bossPointb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="pointBossB"
+                            android:text="@string/boss_in_office_button"
+                            android:textAllCaps="true" />
+
+                        <Button
+                            android:id="@+id/bossCaugthb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="caugthB"
+                            android:text="@string/caugth_by_boss"
+                            android:textAllCaps="true" />
+
+                        <TextView
+                            android:id="@+id/caugthb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/caugth_by_boss"
+                            android:textAllCaps="true"
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvbcaugthb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#F44336"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.25">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/text_general"
-                    android:gravity="center"
-                    android:fontFamily="casual"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:text="points"
-                    android:id="@+id/pTitleb" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/text_points"
-                    android:gravity="center"
-                    android:fontFamily="casual"
-                    android:textStyle="bold"
-                    android:id="@+id/tvpointsb" />
-
-
-                <Button
-                    android:text="+1 point"
-                    android:textAllCaps="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="incrasePointsB"
-                    android:id="@+id/pointB" />
-
-                <Button
-                    android:text="boss in office"
-                    android:textAllCaps="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="pointBossB"
-                    android:id="@+id/bossPointb" />
-
-                <Button
-                    android:text="caugth by boss"
-                    android:textAllCaps="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="caugthB"
-                    android:id="@+id/bossCaugthb" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/text_general"
-                    android:gravity="center"
-                    android:fontFamily="casual"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:text="caugth by boss"
-                    android:id="@+id/caugthb" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/texColorboss"
-                    android:textSize="@dimen/text_points"
-                    android:gravity="center"
-                    android:fontFamily="casual"
-                    android:textStyle="bold"
-                    android:id="@+id/tvbcaugthb" />
-
-            </LinearLayout>
-
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="reset"
+                android:text="@string/reset_button" />
 
         </LinearLayout>
-
-    </LinearLayout>
-
-    <Button
-        android:text="Reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1.5"
-        android:onClick="reset"
-        android:id="@+id/reset" />
-
+    </ScrollView>
 </LinearLayout>
+
