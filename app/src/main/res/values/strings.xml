@@ -6,4 +6,14 @@
     <string name="boss_in_office_button">boss in office</string>
     <string name="caugth_by_boss">caugth by boss</string>
     <string name="points">points</string>
+    <string name="instructions">Instructions</string>
+    <string name="Howtoplay">"Welcome to he official OFFICEBALL score keeper Android application
+
+The OFFICCEBALL It is a sport of skill played in offices around the world when there is not much work.
+
+This sport consists of throwing a ball of paper to a trash can from the workstation.
+
+Each basket counts one point (three if the boss is in the office).
+
+Be careful, if the boss catch you,  you to lose five points, and if he does more than once you could lose something more .........</string>
 </resources>
